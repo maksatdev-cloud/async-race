@@ -4,8 +4,6 @@ import { fetchCars, setPage } from "../../features/garage/garageSlice";
 import Button from "../../ui/Button/Button";
 import Controls from "./Controls/Controls";
 import CarTrack from "./CarTrack/CarTrack";
-import { startEngine, driveCar } from "../../api/engine";
-import type { Car } from "../../types";
 import Modal from "../../ui/Modal/Modal";
 import "./Garage.css";
 import { clearWinner } from "../../features/garage/garageSlice";

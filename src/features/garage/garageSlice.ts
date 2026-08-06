@@ -9,7 +9,6 @@ import { getRandomName, getRandomColor } from "../../utils/carGenerator";
 import * as api from "../../api";
 import * as winnersApi from "../../api/winners";
 import { saveWinnerThunk } from "../winners/winnersSlice";
-import * as engineApi from "../../api/engine";
 
 export interface WinnerInfo {
   id: number;
@@ -21,7 +20,7 @@ export interface PageRaceState {
   isRacing: boolean;
   winner: WinnerInfo | null;
   isRaceFinished: boolean;
-  finishedCars: Record<number, number>; 
+  finishedCars: Record<number, number>;
   brokenCars: Record<number, boolean>;
 }
 
@@ -34,7 +33,7 @@ interface GarageState {
   isRacing: boolean;
   winner: WinnerInfo | null;
   isRaceFinished: boolean;
-  finishedCars: Record<number, number>; 
+  finishedCars: Record<number, number>;
   brokenCars: Record<number, boolean>;
   pageStates: Record<number, PageRaceState>;
 }

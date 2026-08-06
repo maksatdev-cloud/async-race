@@ -2,7 +2,6 @@ import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import {
   setSelectedCar,
   deleteCarThunk,
-  setWinner,
   clearCarState,
   markCarFinished,
   reportRaceWinnerThunk,
@@ -14,7 +13,6 @@ import CarImage from "../CarImage";
 import * as api from "../../../api/index";
 import "./CarTrack.css";
 import { useEffect, useRef, useState } from "react";
-// import { saveWinnerThunk } from "../../../features/winners/winnersSlice";
 
 interface CarTrackProps {
   car: Car;

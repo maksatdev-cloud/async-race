@@ -4,13 +4,10 @@ import {
   createCarThunk,
   deleteAllCarsThunk,
   generateCarsThunk,
-  resetRaceState,
   resetRaceThunk,
   startRaceState,
-  // startRaceThunk,
   updateCarThunk,
 } from "../../../features/garage/garageSlice";
-import * as api from "../../../api/index";
 import Button from "../../../ui/Button/Button";
 import "./Controls.css";
 
