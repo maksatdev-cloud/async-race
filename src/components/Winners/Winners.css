@@ -1,0 +1,34 @@
+.winners-container {
+  padding: 20px;
+}
+
+.winners-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #2a2a2a; 
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.winners-table th,
+.winners-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.winners-table th {
+  background-color: #1a1a1a;
+  font-weight: bold;
+}
+
+.sortable-col {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sortable-col:hover {
+  color: #4caf50;
+}

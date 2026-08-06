@@ -1,0 +1,109 @@
+:root {
+  --neon-blue: #00e5ff;
+  --neon-green: #39ff14;
+  --neon-pink: #ff00ea;
+  --neon-red: #ff003c;
+
+  --bg-main: #090a0f;
+  --bg-panel: rgba(20, 22, 35, 0.7);
+  --text-main: #e0e6ed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  background-image:
+    radial-gradient(circle at 50% 0%, #1a1c29 0%, transparent 50%),
+    linear-gradient(0deg, rgba(0, 229, 255, 0.05) 0%, transparent 100%);
+  color: var(--text-main);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: transparent;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+button:not(:disabled):active {
+  transform: scale(0.95);
+}
+
+button[class*="primary"],
+.primary {
+  color: var(--neon-blue);
+  border: 1px solid var(--neon-blue);
+}
+button[class*="primary"]:not(:disabled):hover,
+.primary:not(:disabled):hover {
+  background: var(--neon-blue);
+  color: #000;
+  box-shadow:
+    0 0 10px var(--neon-blue),
+    0 0 20px var(--neon-blue);
+}
+
+button[class*="success"],
+.success {
+  color: var(--neon-green);
+  border: 1px solid var(--neon-green);
+}
+button[class*="success"]:not(:disabled):hover,
+.success:not(:disabled):hover {
+  background: var(--neon-green);
+  color: #000;
+  box-shadow:
+    0 0 10px var(--neon-green),
+    0 0 20px var(--neon-green);
+}
+
+button[class*="warning"],
+.warning {
+  color: var(--neon-pink);
+  border: 1px solid var(--neon-pink);
+}
+button[class*="warning"]:not(:disabled):hover,
+.warning:not(:disabled):hover {
+  background: var(--neon-pink);
+  color: #fff;
+  box-shadow:
+    0 0 10px var(--neon-pink),
+    0 0 20px var(--neon-pink);
+}
+
+button[class*="danger"],
+.danger {
+  color: var(--neon-red);
+  border: 1px solid var(--neon-red);
+}
+button[class*="danger"]:not(:disabled):hover,
+.danger:not(:disabled):hover {
+  background: var(--neon-red);
+  color: #fff;
+  box-shadow:
+    0 0 10px var(--neon-red),
+    0 0 20px var(--neon-red);
+}
