@@ -4,7 +4,7 @@
 **Deploy link:** https://async-race-gold.vercel.app
 
 ## Author
-Developed by: Yusupov
+Developed by: Ismail M.
 
 ---
 
